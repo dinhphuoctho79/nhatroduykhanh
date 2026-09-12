@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nhà Trọ Duy Khánh | Bình Đức, Tây Ninh</title>
+  <meta name="description" content="Nhà Trọ Duy Khánh tại Ấp 4, Nhựt Chánh, Bình Đức, Tây Ninh. Nằm trên tuyến Quốc lộ 1A, đối diện Trường Tiểu học Thạnh Đức. Liên hệ để hỏi giá và tình trạng phòng trống.">
+  <meta name="theme-color" content="#0f294a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#0f294a; --navy2:#0a1d36; --blue:#0068ff; --orange:#f97316;
+      --orange2:#ea580c; --bg:#f7f9fc; --card:#fff; --text:#243449;
+      --muted:#64748b; --line:#e2e8f0; --green:#0f9f6e; --red:#e11d48;
+      --radius:22px; --shadow:0 14px 35px rgba(15,41,74,.09);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Be Vietnam Pro",system-ui,sans-serif;color:var(--text);background:#fff}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .container{width:min(1180px,calc(100% - 32px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--navy)}
+    .brandmark{width:38px;height:38px;border-radius:11px;background:var(--navy);color:#fff;display:grid;place-items:center}
+    .brand small{display:block;font-size:10px;color:var(--orange);letter-spacing:.08em}
+    .menu{display:flex;gap:24px;font-size:14px;font-weight:600}
+    .headcall{background:var(--orange);color:#fff;padding:11px 16px;border-radius:12px;font-weight:800}
+    .hero{background:linear-gradient(180deg,#f8fbff 0,#fff 100%);padding:56px 0 44px}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;background:#eef6ff;border:1px solid #cfe1ff;color:var(--navy);padding:7px 11px;border-radius:999px;font-size:12px;font-weight:800}
+    h1{font-size:clamp(42px,6vw,72px);line-height:.98;letter-spacing:-.035em;margin:18px 0 14px;color:var(--navy)}
+    .lead{font-size:19px;line-height:1.65;color:#5c6a7e;max-width:720px}
+    .landmarks{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+    .chip{background:#fff;border:1px solid var(--line);padding:10px 12px;border-radius:12px;font-size:14px;font-weight:700}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 18px;border-radius:13px;font-weight:800;border:1px solid transparent}
+    .btn.primary{background:var(--orange);color:#fff;box-shadow:0 10px 24px rgba(249,115,22,.22)}
+    .btn.primary:hover{background:var(--orange2)}
+    .btn.secondary{background:#fff;color:var(--navy);border-color:#cdd7e5}
+    .btn.map{background:var(--blue);color:white}
+    .hero-photo{position:relative;border-radius:26px;overflow:hidden;box-shadow:var(--shadow);border:4px solid #fff;aspect-ratio:4/3}
+    .hero-photo img{width:100%;height:100%;object-fit:cover}
+    .photo-badge{position:absolute;left:14px;top:14px;background:rgba(15,41,74,.9);color:#fff;padding:7px 10px;border-radius:999px;font-size:11px;font-weight:800}
+    .time-badge{position:absolute;right:14px;bottom:14px;background:rgba(255,255,255,.95);padding:8px 10px;border-radius:10px;font-size:12px;font-weight:800}
+    .quick{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+    .quick-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+    .qitem{padding:20px 18px;border-right:1px solid var(--line)}
+    .qitem:last-child{border-right:0}
+    .qitem b{display:block;color:var(--navy);margin-top:4px}
+    .qitem small{color:var(--muted)}
+    section{padding:74px 0}
+    .section-alt{background:var(--bg)}
+    .section-head{text-align:center;max-width:760px;margin:0 auto 34px}
+    .kicker{font-size:12px;color:var(--orange);font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+    h2{font-size:clamp(28px,4vw,42px);line-height:1.12;margin:8px 0 10px;color:var(--navy)}
+    .sub{color:var(--muted);line-height:1.7}
+    .gallery{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+    .gallery-side{display:grid;gap:18px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 8px 26px rgba(15,41,74,.05)}
+    .card img{width:100%;height:100%;object-fit:cover}
+    .photo-main .media{aspect-ratio:4/3}
+    .photo-small .media{aspect-ratio:16/10}
+    .card-body{padding:18px}
+    .card-body h3{margin:0 0 7px;color:var(--navy);font-size:18px}
+    .card-body p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+    .amenities{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .amenity{padding:22px;border:1px solid var(--line);border-radius:18px;background:#fff}
+    .iconbox{width:44px;height:44px;border-radius:12px;background:#eef6ff;display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+    .amenity h3{margin:0 0 7px;color:var(--navy);font-size:17px}
+    .amenity p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+    .hours{display:grid;grid-template-columns:1.1fr .45fr .45fr;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px}
+    .hour-card{text-align:center;border:1px solid var(--line);background:#f9fbff;border-radius:16px;padding:20px}
+    .hour-card strong{font-size:34px;color:var(--navy)}
+    .hour-card.open strong{color:#0f9f6e}
+    .hour-card.close strong{color:#d91f4e}
+    .contact-band{background:var(--navy);color:#fff;text-align:center;padding:58px 20px}
+    .contact-band h2{color:#fff;margin-top:6px}
+    .contact-band p{color:#cbd5e1}
+    .contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .location-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:28px;align-items:center}
+    .location-list{display:grid;gap:10px;margin:20px 0}
+    .location-item{border:1px solid var(--line);border-radius:13px;padding:12px 14px;background:#fff}
+    .mapcard{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+    .mapdiagram{padding:22px;background:#f5f7fa}
+    .school,.road,.inn,.barber{border-radius:12px;padding:14px;font-weight:800}
+    .school{background:#dcfce7;color:#166534}
+    .road{background:#fef08a;color:#854d0e;margin:12px 0;text-align:center}
+    .diagram-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .barber{background:#fff7ed;color:#9a3412;border:1px solid #fed7aa}
+    .inn{background:var(--navy);color:#fff}
+    .mapbody{padding:20px}
+    footer{background:#0b2340;color:#cbd5e1;padding:34px 0}
+    .footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:26px}
+    .footer-grid b{color:#fff}
+    .mobilebar{display:none}
+    .copylink{background:none;border:0;color:var(--blue);font-weight:800;cursor:pointer;padding:8px 0}
+    @media(max-width:860px){
+      .menu{display:none} .nav{height:62px} .brand small{display:none}
+      .headcall{padding:9px 11px;font-size:12px}
+      .hero{padding:24px 0 20px} .hero-grid{grid-template-columns:1fr;gap:18px}
+      h1{font-size:34px;line-height:1.04;margin:12px 0 8px}
+      .lead{font-size:15px;margin:0}
+      .hero-photo{order:2;aspect-ratio:16/11;border-radius:18px}
+      .landmarks{margin:14px 0}
+      .chip{width:100%;font-size:13px}
+      .cta-row{display:grid;grid-template-columns:1fr;gap:9px}
+      .btn{width:100%}
+      .quick-grid{grid-template-columns:1fr 1fr}
+      .qitem{border-right:0;border-bottom:1px solid var(--line);padding:14px}
+      .qitem:nth-child(odd){border-right:1px solid var(--line)}
+      .qitem:last-child{grid-column:1/-1;border-bottom:0}
+      section{padding:42px 0}
+      .section-head{text-align:left;margin-bottom:20px}
+      h2{font-size:25px}
+      .gallery{grid-template-columns:1fr}
+      .gallery-side{grid-template-columns:1fr}
+      .photo-main .media,.photo-small .media{aspect-ratio:16/11}
+      .amenities{grid-template-columns:1fr 1fr}
+      .amenity{padding:16px}
+      .hours{grid-template-columns:1fr 1fr}
+      .hours>div:first-child{grid-column:1/-1}
+      .hour-card strong{font-size:27px}
+      .location-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+      body{padding-bottom:82px}
+      .mobilebar{position:fixed;z-index:60;display:grid;grid-template-columns:1fr 1fr 1fr;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:8px max(10px,env(safe-area-inset-right)) max(8px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));box-shadow:0 -8px 20px rgba(15,41,74,.12)}
+      .mobilebar a{min-height:52px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;font-weight:900}
+      .mobilebar .call{background:var(--orange);color:white}
+      .mobilebar .view{background:#f8fafc;color:var(--navy)}
+      .mobilebar .go{background:#eff6ff;color:var(--blue)}
+    }
+    @media(max-width:480px){
+      .container{width:min(100% - 22px,1180px)}
+      .eyebrow{font-size:10px}
+      .amenities{grid-template-columns:1fr 1fr;gap:10px}
+      .amenity{padding:13px}
+      .amenity p{font-size:12px}
+      .diagram-row{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#top">
+      <span class="brandmark">⌂</span>
+      <span><small>PHÒNG TRỌ CHO THUÊ</small>NHÀ TRỌ DUY KHÁNH</span>
+    </a>
+    <nav class="menu">
+      <a href="#hinh-anh">Hình ảnh</a>
+      <a href="#tien-nghi">Tiện nghi</a>
+      <a href="#gio-ra-vao">Giờ ra vào</a>
+      <a href="#vi-tri">Vị trí</a>
+    </nav>
+    <a class="headcall" href="tel:0945746674">☎ 0945 746 674</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">📍 QUỐC LỘ 1A • BÌNH ĐỨC • TÂY NINH</div>
+        <h1>NHÀ TRỌ<br>DUY KHÁNH</h1>
+        <p class="lead">Không gian ở gọn gàng, tiện lợi, vị trí dễ tìm tại Bình Đức, Tây Ninh.</p>
+        <div class="landmarks">
+          <div class="chip">✓ Đối diện Trường Tiểu học Thạnh Đức</div>
+          <div class="chip">✓ Phía trước có Hớt Tóc Nam Duy Khánh</div>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="tel:0945746674">☎ GỌI HỎI PHÒNG TRỐNG</a>
+          <a class="btn secondary" href="https://maps.app.goo.gl/CxVNPoh9p4w3H1eLA" target="_blank" rel="noopener">📍 CHỈ ĐƯỜNG GOOGLE MAPS</a>
+        </div>
+        <button class="copylink" onclick="copyAddress(this)">⧉ Sao chép địa chỉ gửi Zalo / SMS</button>
+      </div>
+      <div class="hero-photo">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoz2lEeKWHb4yIzG-9le4JVsNs7hihSvkfVDk94fSzToRTNerInhjyfGuUpQWO1uuAwTMdGcrv3byLwzb5YgEiFXOjy0mFRupyoaeXxRq6GV_XRfSy1T9d3Jn6-R39ZaJdRGxshV72x9eXwSqkyAca4nbu0C-SWhzKfltqXMOgVbPhO3xPkR07ChK0SAhf7I6zKeyMVHbjzJJqTEDQg2_b_kWL1btBmX7bp5B9DL1gmYiu3eNdrsn6B4Ou_pHvGTZKZw" alt="Ảnh thực tế Nhà Trọ Duy Khánh">
+        <div class="photo-badge">Ảnh thực tế tại nhà trọ</div>
+        <div class="time-badge">Giờ ra vào 05:00 – 22:00</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="quick">
+    <div class="container quick-grid">
+      <div class="qitem"><small>Kết cấu</small><b>Gác lửng</b></div>
+      <div class="qitem"><small>Tiện ích</small><b>Khu vực nấu ăn</b></div>
+      <div class="qitem"><small>Vệ sinh</small><b>Nhà vệ sinh riêng</b></div>
+      <div class="qitem"><small>Nền phòng</small><b>Nền lát gạch</b></div>
+      <div class="qitem"><small>Giờ ra vào</small><b>05:00 – 22:00</b></div>
+    </div>
+  </div>
+
+  <section id="hinh-anh" class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Hình ảnh thực tế</div>
+        <h2>Hình Ảnh Thực Tế Tại Nhà Trọ Duy Khánh</h2>
+        <p class="sub">Hình ảnh chụp thực tế tại dãy phòng Nhà Trọ Duy Khánh.</p>
+      </div>
+      <div class="gallery">
+        <article class="card photo-main">
+          <div class="media"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwZD909ZtwBdiUhmAOSqjAPNvjNavTiJqkNx922ILyLV2qDr7TCaaYRkLESdUlHGPCHHXPoWxFL1-2CNBI42GdqmFSedl7xMJwosXVN90otXgWUnz2qBTtgFeZEBk2csQFiO3syd3yUYn4Hned1a3vOIf1XgDq-MdtkhJTSnLl9GcFn62UGKpKfYJGYITdwUu7kyXWYs-4JQz1HNSSBtWkT0pfJv5m2LRvamY4TkAAXsdLIvWB-wPRT7b9g3EYfcdAUA" alt="Phòng trọ có gác lửng"></div>
+          <div class="card-body"><h3>Không gian phòng có gác lửng</h3><p>Có gác lửng giúp tăng thêm không gian sử dụng.</p></div>
+        </article>
+        <div class="gallery-side">
+          <article class="card photo-small">
+            <div class="media"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD76BKGoeV94Vw3INVUiZlYvtdip1FEKbeX1u60VNNrvGcf9C0RaG1O1AjuAl_TDeAqdoJP3NEftbWG-L0dKmPwHYIiuyBxuXhq5Pt_9B4Dpf2tzvUKq1n2kPkFM1D_lt1hB3Qky201H3q58xm72Q_sZtug_xnq3J2ibvldOUeWh-uTceeyUuFCXYOOvBT1xo-2oSaSwULKYoixiJI1JU7iGH0323GqloXqC_2ub8spXL_bOVO-Eb7XhW209kCHlMQI7A" alt="Khu vực nấu ăn"></div>
+            <div class="card-body"><h3>Khu vực nấu ăn</h3><p>Có bệ bếp và khu vực chuẩn bị bữa ăn riêng.</p></div>
+          </article>
+          <article class="card photo-small">
+            <div class="media"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYysEY4ZNwLCFsLvGSaHLRnzoLwDesCyVCmk9I9B5S1p4NXRuWV9C20OMdteNx11vRRbFr1t0tPIjGKgjk3BIrIpnQfP-yQVqHmwJvY_SwsHKYVnL2JcMsOFeSPtdBgH4GiKvDXPkwAUK_QIHdDn6Ctsxp62HTiIihv-3422q5xZbcToI95JiE0FrGY2sQL6oVgWHWBXWstqw55n0fb7QJbR2ElwUv583-lNnNTeJzE5Za_TMI67JJzYgyrTZf3T4n8g" alt="Nhà vệ sinh riêng"></div>
+            <div class="card-body"><h3>Nhà vệ sinh riêng</h3><p>Nhà vệ sinh bố trí riêng bên trong phòng.</p></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tien-nghi">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Đặc điểm căn phòng</div>
+        <h2>Tiện Nghi Phòng</h2>
+        <p class="sub">Các thông tin dưới đây được giữ đúng theo dữ liệu đã xác nhận.</p>
+      </div>
+      <div class="amenities">
+        <div class="amenity"><div class="iconbox">🪜</div><h3>Gác lửng</h3><p>Tăng thêm không gian để đồ hoặc nghỉ ngơi.</p></div>
+        <div class="amenity"><div class="iconbox">🍳</div><h3>Khu vực nấu ăn</h3><p>Có khu vực riêng để chuẩn bị bữa ăn hằng ngày.</p></div>
+        <div class="amenity"><div class="iconbox">🚿</div><h3>Nhà vệ sinh riêng</h3><p>Không gian vệ sinh riêng bên trong phòng.</p></div>
+        <div class="amenity"><div class="iconbox">▦</div><h3>Nền lát gạch</h3><p>Thuận tiện cho việc vệ sinh và sinh hoạt.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gio-ra-vao" class="section-alt">
+    <div class="container">
+      <div class="hours">
+        <div>
+          <div class="kicker">Nề nếp giờ giấc</div>
+          <h2 style="font-size:30px;margin-bottom:8px">Giờ Ra Vào</h2>
+          <p class="sub" style="margin:0">Khách thuê vui lòng lưu ý khung giờ ra vào của nhà trọ.</p>
+        </div>
+        <div class="hour-card open"><span>MỞ CỬA</span><br><strong>05:00</strong></div>
+        <div class="hour-card close"><span>ĐÓNG CỬA</span><br><strong>22:00</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-band">
+    <div class="container">
+      <div class="kicker" style="color:#fdba74">Liên hệ trực tiếp</div>
+      <h2>ĐANG TÌM PHÒNG TẠI BÌNH ĐỨC?</h2>
+      <p>Liên hệ Nhà Trọ Duy Khánh để hỏi giá, tình trạng phòng trống và hẹn thời gian xem phòng.</p>
+      <div class="contact-actions">
+        <a class="btn primary" href="tel:0945746674">☎ 0945 746 674</a>
+        <a class="btn secondary" href="tel:0938746674">☎ 0938 746 674</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="vi-tri">
+    <div class="container location-grid">
+      <div>
+        <div class="kicker">Vị trí dễ tìm</div>
+        <h2>Ngay Tuyến Quốc Lộ 1A</h2>
+        <p class="sub">Ấp 4, Nhựt Chánh, Bình Đức, Tây Ninh.</p>
+        <div class="location-list">
+          <div class="location-item">🏫 Đối diện Trường Tiểu học Thạnh Đức</div>
+          <div class="location-item">✂ Phía trước có Hớt Tóc Nam Duy Khánh</div>
+          <div class="location-item">🕒 Giờ ra vào: 05:00 – 22:00</div>
+        </div>
+        <div class="cta-row">
+          <a class="btn map" href="https://maps.app.goo.gl/CxVNPoh9p4w3H1eLA" target="_blank" rel="noopener">📍 MỞ CHỈ ĐƯỜNG GOOGLE MAPS</a>
+          <button class="btn secondary" type="button" onclick="copyAddress(this)">⧉ SAO CHÉP ĐỊA CHỈ</button>
+        </div>
+      </div>
+      <div class="mapcard">
+        <div class="mapdiagram">
+          <div class="school">🏫 TRƯỜNG TIỂU HỌC THẠNH ĐỨC</div>
+          <div class="road">QUỐC LỘ 1A</div>
+          <div class="diagram-row">
+            <div class="barber">✂ HỚT TÓC NAM DUY KHÁNH</div>
+            <div class="inn">📍 NHÀ TRỌ DUY KHÁNH<br><small>Ấp 4, Nhựt Chánh, Bình Đức</small></div>
+          </div>
+        </div>
+        <div class="mapbody">
+          <b style="color:var(--navy)">Sơ đồ nhận biết vị trí</b>
+          <p class="sub" style="margin-bottom:0">Dùng các dấu mốc thực tế để nhận biết nhà trọ; nút chỉ đường phía trên mở Google Maps chính thức.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><b>NHÀ TRỌ DUY KHÁNH</b><p>Không gian ở gọn gàng, tiện lợi, vị trí dễ tìm.</p></div>
+    <div><b>THÔNG TIN LIÊN HỆ</b><p>Ấp 4, Nhựt Chánh, Bình Đức, Tây Ninh<br>0945 746 674<br>0938 746 674</p></div>
+    <div><b>GIỜ RA VÀO</b><p>Mở cửa 05:00<br>Đóng cửa 22:00</p></div>
+  </div>
+  <div class="container" style="margin-top:20px;font-size:12px;color:#8ea0b8">© <span id="year"></span> Nhà Trọ Duy Khánh.</div>
+</footer>
+
+<nav class="mobilebar" aria-label="Hành động nhanh">
+  <a class="call" href="tel:0945746674">☎<span>GỌI NGAY</span></a>
+  <a class="view" href="#hinh-anh">▣<span>XEM PHÒNG</span></a>
+  <a class="go" href="https://maps.app.goo.gl/CxVNPoh9p4w3H1eLA" target="_blank" rel="noopener">📍<span>CHỈ ĐƯỜNG</span></a>
+</nav>
+
+<script>
+  const addressText = "Nhà Trọ Duy Khánh - Ấp 4, Nhựt Chánh, Bình Đức, Tây Ninh. Đối diện Trường Tiểu học Thạnh Đức. Phía trước có Hớt Tóc Nam Duy Khánh. Chỉ đường: https://maps.app.goo.gl/CxVNPoh9p4w3H1eLA";
+  async function copyAddress(el){
+    try{
+      await navigator.clipboard.writeText(addressText);
+      const old = el.textContent;
+      el.textContent = "✓ Đã sao chép địa chỉ";
+      setTimeout(()=>el.textContent=old,1800);
+    }catch(e){
+      alert(addressText);
+    }
+  }
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
