@@ -34,7 +34,19 @@
     .hero{background:linear-gradient(180deg,#f8fbff 0,#fff 100%);padding:56px 0 44px}
     .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
     .eyebrow{display:inline-flex;gap:8px;align-items:center;background:#eef6ff;border:1px solid #cfe1ff;color:var(--navy);padding:7px 11px;border-radius:999px;font-size:12px;font-weight:800}
-    h1{font-size:clamp(42px,6vw,72px);line-height:1.08;letter-spacing:-.015em;margin:18px 0 16px;color:var(--navy);font-weight:900}
+    h1{margin:18px 0 16px;color:var(--navy);font-weight:900}
+    .hero-led{
+      font-size:clamp(34px,4.2vw,56px);
+      line-height:1.06;
+      letter-spacing:-.022em;
+      white-space:nowrap;
+      text-transform:uppercase;
+      text-shadow:0 1px 0 #fff,0 0 14px rgba(0,104,255,.10);
+    }
+    .hero-led span{
+      color:var(--orange);
+      text-shadow:0 1px 0 #fff,0 0 14px rgba(249,115,22,.16);
+    }
     .lead{font-size:19px;line-height:1.65;color:#5c6a7e;max-width:720px}
     .landmarks{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
     .chip{background:#fff;border:1px solid var(--line);padding:10px 12px;border-radius:12px;font-size:14px;font-weight:700}
@@ -132,7 +144,7 @@
       .menu{display:none} .nav{min-height:66px} .brand small{display:none}
       .headcall{padding:9px 11px;font-size:12px}
       .hero{padding:24px 0 20px} .hero-grid{grid-template-columns:1fr;gap:18px}
-      h1{font-size:34px;line-height:1.12;letter-spacing:-.01em;margin:12px 0 10px}
+      .hero-led{font-size:clamp(24px,7vw,31px);line-height:1.08;letter-spacing:-.018em;margin:12px 0 10px;white-space:nowrap}
       .lead{font-size:15px;margin:0}
       .hero-photo{order:2;aspect-ratio:16/11;border-radius:18px}
       .landmarks{margin:14px 0}
@@ -187,7 +199,7 @@
       <a href="#gio-ra-vao">Giờ ra vào</a>
       <a href="#vi-tri">Vị trí</a>
     </nav>
-    <a class="headcall" href="tel:0945746674">☎ 0945 746 674</a>
+    <a class="headcall" href="https://zalo.me/0945746674" target="_blank" rel="noopener">Zalo 0945 746 674</a>
   </div>
 </header>
 
@@ -196,14 +208,14 @@
     <div class="container hero-grid">
       <div>
         <div class="eyebrow">📍 QUỐC LỘ 1A • BÌNH ĐỨC • TÂY NINH</div>
-        <h1>NHÀ TRỌ<br>DUY KHÁNH</h1>
+        <h1 class="hero-led">NHÀ TRỌ <span>DUY KHÁNH</span></h1>
         <p class="lead">Không gian ở gọn gàng, tiện lợi, vị trí dễ tìm tại Bình Đức, Tây Ninh.</p>
         <div class="landmarks">
           <div class="chip">✓ Đối diện Trường Tiểu học Thạnh Đức</div>
           <div class="chip">✓ Phía trước có Hớt Tóc Nam Duy Khánh</div>
         </div>
         <div class="cta-row">
-          <a class="btn primary" href="tel:0945746674">☎ GỌI HỎI PHÒNG TRỐNG</a>
+          <a class="btn primary" href="https://zalo.me/0945746674" target="_blank" rel="noopener">💬 NHẮN ZALO HỎI PHÒNG</a>
           <a class="btn secondary" href="https://maps.app.goo.gl/CxVNPoh9p4w3H1eLA" target="_blank" rel="noopener">📍 CHỈ ĐƯỜNG GOOGLE MAPS</a>
         </div>
         <button class="copylink" onclick="copyAddress(this)">⧉ Sao chép địa chỉ gửi Zalo / SMS</button>
@@ -288,7 +300,7 @@
       <h2>ĐANG TÌM PHÒNG TẠI BÌNH ĐỨC?</h2>
       <p>Liên hệ Nhà Trọ Duy Khánh để hỏi giá, tình trạng phòng trống và hẹn thời gian xem phòng.</p>
       <div class="contact-actions">
-        <a class="btn primary" href="tel:0945746674">☎ 0945 746 674</a>
+        <a class="btn primary" href="https://zalo.me/0945746674" target="_blank" rel="noopener">💬 ZALO 0945 746 674</a>
         <a class="btn secondary" href="tel:0938746674">☎ 0938 746 674</a>
       </div>
     </div>
@@ -352,8 +364,12 @@
           <span>Ấp 4, Nhựt Chánh, Bình Đức, Tây Ninh</span>
         </div>
         <div class="footer-row">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.11.37 2.31.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
-          <a href="tel:0945746674">0945 746 674</a>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.6 7.7-5.25 5.25a1 1 0 0 1-1.42 0L7.4 12.42l1.42-1.42 1.82 1.82 4.54-4.54 1.42 1.42Z"/></svg>
+          <a href="https://zalo.me/0945746674" target="_blank" rel="noopener">Zalo 0945 746 674</a>
+        </div>
+        <div class="footer-row">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V4.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V11H7.3v3h2.8v8h3.4Z"/></svg>
+          <span>Facebook: <strong style="color:#fff">Nguyễn Thị Tố Bừng</strong></span>
         </div>
         <div class="footer-row">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.11.37 2.31.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
@@ -399,7 +415,7 @@
 <div class="zalo-float" id="zaloFloat">
   <div class="zalo-popup" id="zaloPopup" role="dialog" aria-label="Liên hệ Zalo Nhà Trọ Duy Khánh">
     <h3>Liên hệ Nhà Trọ Duy Khánh</h3>
-    <p>Nhắn Zalo hoặc gọi trực tiếp để hỏi giá và tình trạng phòng trống.</p>
+    <p>Nhắn Zalo để hỏi giá và tình trạng phòng trống.<br>Facebook: <strong>Nguyễn Thị Tố Bừng</strong></p>
     <div class="zalo-number">
       <span>📱 0945 746 674</span>
       <span style="color:#0068ff;font-size:12px">Zalo</span>
@@ -413,7 +429,7 @@
 </div>
 
 <nav class="mobilebar" aria-label="Hành động nhanh">
-  <a class="call" href="tel:0945746674">☎<span>GỌI NGAY</span></a>
+  <a class="call" href="https://zalo.me/0945746674" target="_blank" rel="noopener">💬<span>ZALO</span></a>
   <a class="view" href="#hinh-anh">▣<span>XEM PHÒNG</span></a>
   <a class="go" href="https://maps.app.goo.gl/CxVNPoh9p4w3H1eLA" target="_blank" rel="noopener">📍<span>CHỈ ĐƯỜNG</span></a>
 </nav>
